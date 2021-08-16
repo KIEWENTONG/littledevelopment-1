@@ -109,7 +109,6 @@
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
     {
      getdata=email+","+uname+","+password;
-      $( ".alertmsg" ).append( '<div class="alert alert-success alrtmsg" role="alert"><i class="fa fa-check" aria-hidden="true"></i>Register Successfully</div>');
      window.AppInventor.setWebViewString(getdata);
     }
     else
