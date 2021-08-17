@@ -111,8 +111,8 @@
    });
 
   $("#calculate").click(function(){
-     weight=$("#weightinput").val('');
-     height=$("#heightinput").val('');
+     weight=$("#weightinput").val();
+     height=$("#heightinput").val();
      data=weight+","+height;
       window.AppInventor.setWebViewString(data);
    });
