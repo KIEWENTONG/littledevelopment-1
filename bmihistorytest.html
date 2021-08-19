@@ -143,7 +143,9 @@
 </html>
 
 <script>
-  var appInventorInput = window.AppInventor.getWebViewString(); alert(appInventorInput);
+  var appInventorInput = window.AppInventor.getWebViewString(); 
+  var result = appInventorInput.split("").reverse().join("");
+  alert(appInventorInput + result);
  
   $(document).ready(function(){
 
