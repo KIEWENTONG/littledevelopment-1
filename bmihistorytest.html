@@ -129,7 +129,8 @@
     </div>
   </div>
   <hr>
-
+<div class="test">
+</div>
 <!-- 
   <span class="ml-2 badge badge-success">Normal</span>
   <span class="badge badge-secondary">Underweight</span>
@@ -143,19 +144,20 @@
 </html>
 
 <script>
-  var appInventorInput = window.AppInventor.getWebViewString(); 
+ 
+  
+ 
+  $(document).ready(function(){
+     var appInventorInput = window.AppInventor.getWebViewString(); 
   result = appInventorInput;
   if (appInventorInput.length > 0) {
             appInventorInput.forEach(function(data, index) {
-      console.log(data);
+      ( ".test" ).after( "<p>"+appInventorInput+"</p>" );
     });
         } else {
              alert(result);
            }
 
-  
- 
-  $(document).ready(function(){
 
 
    
