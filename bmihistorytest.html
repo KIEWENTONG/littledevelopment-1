@@ -39,8 +39,8 @@
     width: 40%;
   }
   .mycontent-left {
-  border-right: 1px solid #E7E3E3;
-}
+    border-right: 1px solid #E7E3E3;
+  }
 </style>
 </head>
 <body class="p-3 m-3">
@@ -99,7 +99,7 @@
     </a>
   </nav>
 
-<div class="fontsizes">
+  <div class="fontsizes">
    <div class="row mt-3 ">
     <div class="col text-center mycontent-left"><img id="clockicon"src="https://www.transparentpng.com/thumb/clock/amoxZ0-clock-clipart-hd.png" width="30" height="25"  alt=""></div>
     <div class="col text-center mycontent-left"><img id="weighticon"src="https://image.flaticon.com/icons/png/512/1546/1546168.png" width="30" height="25"  alt=""></div>
@@ -129,8 +129,8 @@
     </div>
   </div>
   <hr>
-<div class="test">
-</div>
+  <div class="test">
+  </div>
 <!-- 
   <span class="ml-2 badge badge-success">Normal</span>
   <span class="badge badge-secondary">Underweight</span>
@@ -146,28 +146,14 @@
 <script>
   var appInventorInput = window.AppInventor.getWebViewString(); 
   if (appInventorInput.length > 0) {
-            appInventorInput.forEach(function(data, index) {
-              jQuery(function($) {
-        // ...
+    appInventorInput.forEach(function(data, index) {
+      jQuery(function($) {
         $(".test").append("<p>"+appInventorInput+"</p><br/>");
-    }); 
-       
+      }); 
+      
     });
-        } else {
-             alert(result);
-           }
- 
-  
- 
-  $(document).ready(function(){
-     
-
-
-
-   
-   });
-
-
-
-
+  } else {
+    
+   alert(hi);
+ }
 </script>
