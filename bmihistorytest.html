@@ -83,7 +83,7 @@
 
 <script>
   
-  var data=window.AppInventor.getWebViewString();
+  var data=[window.AppInventor.getWebViewString()];
 alert(data);
  
   if(data.length < 1 || data[0].length < 1) {
@@ -123,7 +123,8 @@ alert(data);
         html+='</div>';
 
         html+='<div class="row ">';
-        html+='<div class="col text-center mycontent-left"></div>';
+        date = data[i][0].split(" ");
+        html+='<div class="col text-center mycontent-left">'+date[0]+'<br/>'+date[1]+'</div>';
         html+='<div class="col text-center mycontent-left">'+data[i][2]+'</div>';
         html+='<div class="col text-center mycontent-left">'+data[i][3]+'</div>';
         html+='<div class="col text-center">'+data[i][4]+'</div>';
@@ -191,7 +192,8 @@ alert(data);
         html+='</div>'
 
         html+='<div class="row ">';
-        html+='<div class="col text-center mycontent-left"></div>';
+        date = data[i][0].split(" ");
+        html+='<div class="col text-center mycontent-left">'+date[0]+'<br/>'+date[1]+'</div>';
         html+='<div class="col text-center mycontent-left">'+data[i][2]+'</div>';
         html+='<div class="col text-center mycontent-left">'+data[i][3]+'</div>';
         html+='<div class="col text-center">'+data[i][4]+'</div>';
