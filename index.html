@@ -54,4 +54,18 @@
 </html>
 
 <script>
-  
+    getdata='bar';
+      window.AppInventor.setWebViewString(getdata);
+  $(document).ready(function(){
+    $("#Bar").click(function(){
+      getdata='bar';
+      window.AppInventor.setWebViewString(getdata);
+    });
+  $("#Pie").click(function(){
+
+      getdata='pie';
+      window.AppInventor.setWebViewString(getdata);
+ 
+});
+});
+  </script>
